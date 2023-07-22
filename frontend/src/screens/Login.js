@@ -14,7 +14,7 @@ export default function Login() {
 const handleSubmit = async (e) => {
     setloading(true);
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/loginuser", {
+    const response = await fetch("https://sst-food-backend.onrender.com/api/loginuser", {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
       method: 'POST',

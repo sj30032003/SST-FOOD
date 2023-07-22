@@ -14,7 +14,7 @@ export default function UserRoute() {
     async function authCheck(token) {
     // console.log(token);
         try {
-          const response = await fetch("http://localhost:5000/api/user-auth", {
+          const response = await fetch("https://sst-food-backend.onrender.com/api/user-auth", {
                // credentials: 'include',
       // Origin:"http://localhost:3000/login",
             method: 'GET',

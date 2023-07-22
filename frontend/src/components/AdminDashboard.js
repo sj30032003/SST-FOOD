@@ -9,7 +9,7 @@ export default function AdminDashboard() {
   const [orders, setOrders] = useState([]);
   const getOrders = async () => {
     try {
-      const { data } =  await fetch("http://localhost:5000/api/order-data", {
+      const { data } =  await fetch("https://sst-food-backend.onrender.com/api/order-data", {
         // credentials: 'include',
         // Origin:"http://localhost:3000/login",
         method: 'GET',

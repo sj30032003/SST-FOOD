@@ -14,7 +14,7 @@ export default function AdminRoute() {
     async function authCheck(token) {
     // console.log(token);
         try {
-          const response = await fetch("http://localhost:5000/api/admin-auth", {
+          const response = await fetch("https://sst-food-backend.onrender.com/api/admin-auth", {
                // credentials: 'include',
       // Origin:"http://localhost:3000/login",
             method: 'GET',

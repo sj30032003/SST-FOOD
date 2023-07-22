@@ -31,7 +31,7 @@ const OptionForm = () => {
   useEffect(() => {
     const fetchCategory = async () => {
       // console.log(localStorage.getItem('userEmail'))
-      await fetch("http://localhost:5000/api/Categorys", {
+      await fetch("https://sst-food-backend.onrender.com/api/Categorys", {
           // credentials: 'include',
           // Origin:"http://localhost:3000/login",
           method: 'GET',
@@ -62,7 +62,7 @@ const OptionForm = () => {
     // setloading(true)
 
       e.preventDefault();
-      const response = await fetch("http://localhost:5000/api/createItem", {
+      const response = await fetch("https://sst-food-backend.onrender.com/api/createItem", {
         // credentials: 'include',
         // Origin:"http://localhost:3000/login",
         method: 'POST',

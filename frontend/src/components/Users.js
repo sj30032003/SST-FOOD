@@ -6,7 +6,7 @@ export default function Users() {
     const [allUsers,setAllUsers] = useState([]);
     const getUsers = async () => {
       try {
-        const { data } =  await fetch("http://localhost:5000/api/users", {
+        const { data } =  await fetch("https://sst-food-backend.onrender.com/api/users", {
           // credentials: 'include',
           // Origin:"http://localhost:3000/login",
           method: 'GET',

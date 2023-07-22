@@ -10,7 +10,7 @@ let navigate= useNavigate();
 const handleSubmit = async (e) => {
   setloading(true)
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/createuser", {
+    const response = await fetch("https://sst-food-backend.onrender.com/api/createuser", {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
       method: 'POST',
@@ -35,7 +35,7 @@ const handleSubmit = async (e) => {
   }
 //    const handleSubmit =async(e)=>{
 //      e.preventDefault();
-//      const response = await fetch("http://localhost:5000/api/createuser",{
+//      const response = await fetch("https://sst-food-backend.onrender.com/api/createuser",{
 //         method:'POST',
 //         header:{
 //             'Content Type':'application/json'
